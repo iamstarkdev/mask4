@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-ng-app="mask4">
+<html data-ng-app="app">
 <head>
 	<meta charset="UTF-8">
 	<title>Mask4</title>
@@ -8,14 +8,18 @@
 <body>
 	<div class="container">
 		<div class="jumbotron">
-			<input mask-phone type="text" class="form-control" ng-model="contato.telefone" placeholder="Digite o telefone:"> <br>
+			<input mask4="phone" type="text" class="form-control" ng-model="contato.telefone" placeholder="Digite o telefone:"> <br>
 
-			<input mask-cpf type="text" class="form-control" ng-model="contato.cpf"  placeholder="Digite o CPF:"> <br>
+			<input mask4="cpf" type="text" class="form-control" ng-model="contato.cpf"  placeholder="Digite o CPF:"> <br>
 
-			<input mask-date type="text" class="form-control" ng-model="contato.data"  placeholder="Digite a data:">
+			<input mask4="date" type="text" class="form-control" ng-model="contato.data"  placeholder="Digite a data:">
 		</div>
 	</div>
 	<script src="libs/angular/angular.min.js"></script>
-	<script src="app.js"></script>
+	<script src="src/mask4/mask4-module.js"></script>
+	<script src="src/mask4/mask4-config.js"></script>
+	<script src="src/mask4/mask4-provider.js"></script>
+	<script src="src/mask4/mask4-directive.js"></script>
+	<script src="src/app.js"></script>
 </body>
 </html>
